@@ -161,7 +161,7 @@ class OpenAIAPI {
               "fileCommenter:",
               args.reviewCommentFromAIExpert,
               args.fileName,
-              args.lineNumber
+              args.lineNumber + 2
             );
             this.addFunctionResult(
               "addReviewCommentToFileLine",
@@ -173,7 +173,7 @@ class OpenAIAPI {
             await this.fileCommenter(
               args.reviewCommentFromAIExpert,
               args.fileName,
-              args.lineNumber
+              args.lineNumber + 2
             );
             retries = 0;
             continue;
